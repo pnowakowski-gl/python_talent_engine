@@ -1,5 +1,5 @@
 def is_anagram(str1, str2):
-    str1, str2 = str1.lower(), str2.lower()
+    str1, str2 = str1.lower(), list(str2.lower())
     if len(str1) == len(str2):
         for i in range(len(str2)):
             if str1[i] in str2:

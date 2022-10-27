@@ -1,6 +1,5 @@
 def narcissistic(test_number):
     length = len(str(test_number))
-    print(sum([int(i)**length for i in str(test_number)]))
     return test_number == sum([int(i)**length for i in str(test_number)])
     
 print(narcissistic(7))  # True

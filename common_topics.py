@@ -11,9 +11,8 @@ def get_common_topics(friends=FRIENDS, topics=3):
     # removing duplicates from original list and converting it back to one
     friends = list(map(list, [set(friend) for friend in friends]))
     flatten_the_list = [j for i in friends for j in i]
-    flatten_the_list.sort()
+    flatten_the_list.sort() # dictionary keys will be alphabetically
     common_topics = {i:flatten_the_list.count(i) for i in flatten_the_list}
-    print(common_topics)
     most_popular = max(list(common_topics.values()))
     set_of_common_topics = set()
     while most_popular != 0:

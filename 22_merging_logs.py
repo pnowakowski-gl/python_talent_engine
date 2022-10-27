@@ -15,8 +15,6 @@ list2 = [
 def merge_logs(list1, list2):
     ids = []
     resulted = list1 + list2
-    a = [list2.remove(i) if i["id"] in ids else ids.append(i["id"]) for i in resulted]
-    print(a)
     for i in resulted:
         if i["id"] in ids:
             list2.remove(i)

@@ -10,7 +10,7 @@ def group_anagrams(test_list):
         new_group.append(test_list.pop(0))
         i = 0
         while i < (len(test_list)):
-            if Counter(test_list[i]) == Counter(new_group[0]):
+            if Counter(test_list[i].lower()) == Counter(new_group[0].lower()):
                 new_group.append(test_list.pop(i))
                 i -= 1
             i += 1
