@@ -1,5 +1,6 @@
 test_strings = ["kawabunga", "metro2013", "moon", "orange"]
 
+
 def shwalengthimeter(test_strings):
     list_of_strings = []
     for i in test_strings:
@@ -12,5 +13,5 @@ def shwalengthimeter(test_strings):
         list_of_strings.append(new_word)
     return list_of_strings
 
+
 print(shwalengthimeter(test_strings))
-                                    
