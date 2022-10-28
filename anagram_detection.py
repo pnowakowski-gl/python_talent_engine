@@ -9,8 +9,8 @@ def is_anagram(str1, str2):
     else:
         return False
     return True
-    
-print(is_anagram("AbbA", "BBaA"))  #True
-print(is_anagram("Good", "gooOD"))  #False
-print(is_anagram("AAABB", "AABBB"))  #False
 
+
+print(is_anagram("AbbA", "BBaA"))  # True
+print(is_anagram("Good", "gooOD"))  # False
+print(is_anagram("AAABB", "AABBB"))  # False

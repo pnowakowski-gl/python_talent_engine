@@ -6,8 +6,8 @@ def check(target: str, list_):
         return False
 
     # return target.lower() in [i.lower() for i in list_]
-    
-    
+
+
 print(check("a", ["A", "b", "c"]))  # True
 print(check("abc", ["AbC", "b", "c"]))  # True
 print(check("aBc", ["AbC"]))  # True
