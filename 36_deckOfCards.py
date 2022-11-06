@@ -1,9 +1,9 @@
-suit = ["♠", "♥", "♦", "♣"]
+suit = ["\u2660", "\u2660", "\u2666", "\u2663"]
 value = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 
 
 class Card:
-    def __init__(self, suit="♠", value="2"):
+    def __init__(self, suit="\u2660", value="2"):
         self.suit = suit
         self.value = value
 
@@ -13,7 +13,7 @@ class Card:
 
 class Deck:
     def __init__(self):
-        self.cards = [Card(s, v) for s in suit for v in value] + [Card("", "JOKER")]
+        self.cards = [Card(s, v) for s in suit for v in value] + [Card("", "RED JOKER")] + [Card("", "BLACK JOKER")]
 
     def __repr__(self):
         return " ".join(self.cards)
@@ -22,10 +22,12 @@ class Deck:
         from random import shuffle
 
         shuffle(self.cards)
-        return self.cards
+        print("Cards have been shuffled")
 
     def pop(self, num=-1):
-        return self.cards.pop(num)
+        popped_card = self.cards.pop(num)
+        print(f"The card {popped_card} has been popped.")
+        return popped_card
 
     def random(self):
         from random import choice
@@ -47,7 +49,6 @@ print(d)
 print(d.index("♥9"))
 print(d.index("9"))"""
 deck = Deck()
-print(deck.cards.card)
 print(deck.pop())
 print(deck.pop().value)
 deck.shuffle()

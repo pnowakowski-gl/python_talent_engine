@@ -1,8 +1,4 @@
 def filter_numbers(start=1000, end=5000):
-    return list(filter(lambda x: x % 3 == 0, range(start, end)))
-
-
-def filter_numbers(start=1000, end=5000):
     return list(
         filter(
             lambda x: x
